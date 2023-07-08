@@ -1,0 +1,2 @@
+#include "NuevoDiagnostico.h"
+

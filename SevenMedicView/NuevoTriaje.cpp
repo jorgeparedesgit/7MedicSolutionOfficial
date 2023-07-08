@@ -1,0 +1,2 @@
+#include "NuevoTriaje.h"
+
