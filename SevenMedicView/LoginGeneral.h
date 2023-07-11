@@ -74,6 +74,7 @@ namespace SevenMedicView {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -81,7 +82,6 @@ namespace SevenMedicView {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -123,6 +123,16 @@ namespace SevenMedicView {
 			this->groupBox1->TabIndex = 2;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"LogIn";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(242, 28);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(138, 124);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 8;
+			this->pictureBox1->TabStop = false;
 			// 
 			// linkLabel1
 			// 
@@ -182,6 +192,7 @@ namespace SevenMedicView {
 			this->textBox2->PasswordChar = '*';
 			this->textBox2->Size = System::Drawing::Size(164, 20);
 			this->textBox2->TabIndex = 3;
+			this->textBox2->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &LoginGeneral::textBox2_KeyDown);
 			// 
 			// textBox1
 			// 
@@ -189,16 +200,6 @@ namespace SevenMedicView {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(164, 20);
 			this->textBox1->TabIndex = 2;
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(242, 28);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(138, 124);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 8;
-			this->pictureBox1->TabStop = false;
 			// 
 			// LoginGeneral
 			// 
@@ -315,5 +316,10 @@ private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Win
 
 
 }
+	private: System::Void textBox2_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+		if (e->KeyData == Keys::Enter) {
+			button1->PerformClick();
+		}
+	}
 };
 }
