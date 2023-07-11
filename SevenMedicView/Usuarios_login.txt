@@ -1,7 +1,11 @@
 72880482E;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
-72880482A;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
 72880482S;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
 72880482M;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
-73333333P;54321;Hachi;Vargas;hachi@gmail.com
 72880482P;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
+72880482A;12345;Eliezer Hugo;Vargas Maluquís;kyriaya@gmail.com
 87654321M;12345;Katherine Daniela;Córdova Rivero;a20202020@pucp.edu.pe
+74929993P;12345;Jorge;Paredes;george.xd@hotmail.es
+74929993A;12345;Jorge;Paredes;george.xd@hotmail.es
+74929993E;12345;Jorge;Paredes;george.xd@hotmail.es
+74929993S;12345;Jorge;Paredes;george.xd@hotmail.es
+74929993M;12345;Jorge;Paredes;george.xd@hotmail.es

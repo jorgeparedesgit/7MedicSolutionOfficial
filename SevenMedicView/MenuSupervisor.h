@@ -60,7 +60,7 @@ namespace SevenMedicView {
 	private: System::Windows::Forms::ToolStripMenuItem^ verListaDePacientesToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ almacenToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ verAlmacenToolStripMenuItem;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 
 	protected:
 
@@ -91,7 +91,6 @@ namespace SevenMedicView {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MenuSupervisor::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->mantenimientoUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->verListaDeUsuariosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -101,9 +100,7 @@ namespace SevenMedicView {
 			this->verListaDePacientesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->almacenToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->verAlmacenToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->menuStrip1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
@@ -174,30 +171,18 @@ namespace SevenMedicView {
 			this->verAlmacenToolStripMenuItem->Text = L"Ver Almacen";
 			this->verAlmacenToolStripMenuItem->Click += gcnew System::EventHandler(this, &MenuSupervisor::verAlmacenToolStripMenuItem_Click);
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(0, 27);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(672, 472);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 10;
-			this->pictureBox1->TabStop = false;
-			// 
 			// MenuSupervisor
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(672, 499);
 			this->Controls->Add(this->menuStrip1);
-			this->Controls->Add(this->pictureBox1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MenuSupervisor";
 			this->Text = L"Supervision";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
